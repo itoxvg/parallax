@@ -1,0 +1,59 @@
+*,html{
+	margin: 0;
+	padding: 0;
+}
+
+h2{
+	color: #FF15A6;
+	font-size: 2em;
+	font-family: Helvetica ,Verdana ;
+}
+
+#home {
+	background: url(../img/bg_1.jpg) 50% 0 no-repeat fixed;
+}
+
+#section2 {
+	background: url(../img/bg_2.jpg) 50% 0 no-repeat fixed;
+}
+
+#section3 {
+	background: url(../img/bg_3.jpg) 50% 0 no-repeat fixed;
+}
+
+#home, #section2, #section3 {
+	margin: 0 auto;
+	max-width: 1920px;
+	min-height: 700px;
+	position: relative;
+	width: 100%;
+	background-size: cover; 
+}
+
+#section2, #section3 {
+	box-shadow: 0 0 20px rgba(0,0,0,0.5); 
+}
+
+.geek {
+	background: url(../img/geek.png);
+	display: block;
+	height: 468px;
+	/*margin: 0 auto;*/
+	width: 490px;
+}
+
+.geek3 {
+	background: url(../img/geek.png);
+	display: block;
+	height: 468px;
+	margin-left: 700px; 
+	width: 490px;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>simple efecto parallax</title>
+	<script src="js/jquery.js"></script>
+	<script>
+
+		$(document).ready(function(){
+			$('section[data-type="parallax_section"]').each(function(){
+				var $bgobj = $(this);
+				$(window).scroll(function(){
+					$window = $(window);
+					var yPos = -($windows.scrollTop() / $bgobj.data('speed'));
+					var coords = '50%' + yPos+ 'px';
+
+					$bgobj.css({backgroundPosition: coords});
+				});
+			});
+		});
+	
+	</script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>	
+	<section id="home" date-type="parallax_section" data-speed="10">
+		<article>
+			<div class="geek"></div>
+			<h2>pagina: 1</h2>	
+		</article>
+	</section>
+
+	<section id="section2" date-type="parallax_section" data-speed="10">
+		<article>
+			<div class="geek"></div>
+			<h2>pagina: 2</h2>	
+		</article>
+	</section>
+
+	<section id="section3" date-type="parallax_section" data-speed="10">
+		<article>
+			<div class="geek3"></div>
+			<h2>pagina: 3</h2>	
+		</article>
+	</section>
+</body>
+</html>
